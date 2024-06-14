@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="basePath">./Logs</Property>
+	</Properties>
+
+
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+
+		<RollingFile name="File" fileName="${basePath}/LogsGenerated.log"
+			filePattern="${basePath}/LogsGenerated-%d{yyyy-MM-dd}.log.gz">
+			<!--<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY" />-->
+			<LevelRangeFilter minLevel="INFO" maxLevel="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="50000" />
+		</RollingFile>
+
+		<RollingFile name="File1" fileName="${basePath}/Logs_Generated.log"
+			filePattern="${basePath}/Logs_Generated-%d{yyyy-MM-dd}.log.gz">
+			<!--<ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY" />-->
+			<LevelRangeFilter minLevel="ERROR" maxLevel="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="50000" />
+		</RollingFile>
+	</Appenders>
+
+
+	<Loggers>
+		<!--<Logger name="com.LetsGo.RunRun" level="trace">
+			<AppenderRef ref="File" />
+		</Logger>-->
+		<Root level="trace"> <!--Here you can use multiple log levels All < Trace < Debug < Info < Warn < Error < Fatal < Off-->
+			<AppenderRef ref="File" />
+			<AppenderRef ref="File1" />
+		</Root>
+	</Loggers>
+</Configuration>

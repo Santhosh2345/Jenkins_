@@ -1,0 +1,5 @@
+17:02:08.540 [main] INFO  com.LetsGo.RunRun - Info-1
+17:02:58.947 [main] ERROR com.LetsGo.RunRun - Error-1
+17:04:25.915 [main] ERROR com.LetsGo.Right - Error
+17:04:25.951 [main] ERROR com.LetsGo.RunRun - Error-1
+15:30:35.457 [main] ERROR com.Logs.Right - Error

@@ -1,0 +1,5 @@
+2024-06-05 16:07:24,400 INFO c.L.RunRun [main] Info-1
+2024-06-05 16:07:24,408 DEBUG c.L.RunRun [main] Debug-1
+2024-06-05 16:07:24,408 ERROR c.L.RunRun [main] Error-1
+2024-06-05 16:07:24,408 FATAL c.L.RunRun [main] Fatal-1
+2024-06-05 16:07:24,409 WARN c.L.RunRun [main] Warning-1
