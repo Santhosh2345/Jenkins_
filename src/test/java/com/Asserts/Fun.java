@@ -1,4 +1,4 @@
-package com.LetsGo;
+package com.Asserts;
 
 import static org.testng.Assert.assertEquals;
 
