@@ -2,6 +2,8 @@ package com.Logs;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class Right {
@@ -17,5 +19,10 @@ public class Right {
 			log.fatal("Fatal");
 			log.trace("trace");
 			log.warn("Warning");
+			
+			WebDriver driver = new ChromeDriver();
+			driver.get("https://www.salezcrm.com/login/public");
+			driver.manage().window().maximize();
+			driver.close();
 		}
 }
