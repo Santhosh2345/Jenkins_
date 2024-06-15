@@ -22,7 +22,9 @@ public class Right {
 			
 			WebDriver driver = new ChromeDriver();
 			driver.get("https://www.salezcrm.com/login/public");
+			System.out.println("Chrome Launched");
 			driver.manage().window().maximize();
+			System.out.println("Chrome Maximized");
 			driver.close();
 		}
 }
