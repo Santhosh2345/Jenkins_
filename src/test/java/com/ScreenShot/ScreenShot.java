@@ -29,7 +29,7 @@ static Logger log;
 static WebDriver driver;
 	@Parameters({"email", "password"})
 	@Test
-	public void rthree_Login(String email, String password) throws AWTException, IOException, InterruptedException {
+	public void rthreeLogin(String email, String password) throws AWTException, IOException, InterruptedException {
 		log = LogManager.getLogger(this.getClass());
 		
 		driver = new ChromeDriver();
