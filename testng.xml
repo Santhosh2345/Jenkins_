@@ -6,7 +6,7 @@
 	<parameter name="password" value="12345678"/>
 	<classes>
 		<!--<class name="com.Logs.Right"></class>-->
-		<class name="com.Logs.RunRun"></class>
+		<class name="com.Logs.RunRun"/>
 		<!--<class name="com.ScreenShot.ScreenShot"></class>-->
 	</classes>
   </test> <!-- Test -->
