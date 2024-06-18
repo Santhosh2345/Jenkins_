@@ -2,7 +2,7 @@ package com.Logs;
 
 public class ArrayOfObjects {
 
-        public static void main(String[] args) throws InterruptedException {
+        public static void main(String[] args) {
 
             //Array of objects
             Players[] pl = new Players[2];
