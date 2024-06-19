@@ -86,7 +86,7 @@ public class XPaths {
 
         //Following xpath
         List<WebElement> iconTexts = driver.findElements(By.xpath("//a//following::span"));
-        System.out.println("Following xpath - Number of Icons Text: " + layerIcon.getText());
+        System.out.println("Following xpath - Number of Icons Text: " + iconTexts.size());
 
         //Following Siblings xpath
         WebElement icon = driver.findElement(By.xpath("//i[.='layers']//following-sibling::span"));
